@@ -31,9 +31,9 @@ public:
 
 LinkList::LinkList()
 {
-	head = new Node;
+	head = new Node; // 申请地址
 	head->data = 0;
-	head->next = NULL;
+	head->next = NULL;// 初始化头指针
 	size = 0;
 }
 
@@ -48,7 +48,7 @@ int LinkList::CreateLinkList(int n)
 		printf("error\n");
 		return -1;
 	}
-	Node* ptemp = NULL;
+	Node* ptemp = NULL;  // 当前指针指向
 	Node* pnew = NULL;
 
 	this->size = n;
